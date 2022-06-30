@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier; -webkit-text-stroke: #000000; min-height: 12.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#ifndef _GLIBCXX_NO_ASSERT</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cassert&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#endif</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cctype&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cerrno&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cfloat&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ciso646&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;climits&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;clocale&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cmath&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;csetjmp&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;csignal&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstdarg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstddef&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstdio&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstdlib&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstring&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ctime&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#if __cplusplus &gt;= 201103L</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ccomplex&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cfenv&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cinttypes&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstdbool&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cstdint&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ctgmath&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cwchar&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;cwctype&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#endif</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// C++</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;algorithm&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;bitset&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;complex&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;deque&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;exception&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;fstream&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;functional&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;iomanip&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ios&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;iosfwd&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;iostream&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;istream&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;iterator&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;limits&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;list&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;locale&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;map&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;memory&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;new&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;numeric&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ostream&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;queue&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;set&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;sstream&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;stack&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;stdexcept&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;streambuf&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;string&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;typeinfo&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;utility&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;valarray&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;vector&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#if __cplusplus &gt;= 201103L</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;array&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;atomic&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;chrono&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;condition_variable&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;forward_list&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;future&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;initializer_list&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;mutex&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;random&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;ratio&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;regex&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;scoped_allocator&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;system_error&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;thread&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;tuple&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;typeindex&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;type_traits&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;unordered_map&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#include &lt;unordered_set&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#endif</span></p>
+</body>
+</html>
